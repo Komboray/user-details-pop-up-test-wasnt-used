@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr data-id="1" data-name="John Doe" data-email="john@example.com"> -->
+        <tr data-id="1" data-name="John Doe" data-email="john@example.com">
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+  <div id="popup" class="hidden">
+    <span onclick="closePopup()" class="close">&times;</span>
+    <div id="userDetails"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
